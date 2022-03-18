@@ -1,0 +1,25 @@
+/*
+1. Write a program to print twin primes less than 1000. If two consecutive odd numbers are both prime then they are known as twin primes.
+2 .Write a program to implement these formulae of permutations and combinations. Number of permutations of n objects taken r at a time: p(n, r) = n! / (n-r)!. Number of combinations of n objects taken r at a time is: c(n, r) = n! / (r!*(n-r)!) = p(n,r) / r!
+
+*/
+
+def checkprime(n):
+if n==1:
+ return 0
+d=2
+while(d<n):
+if(n%d==0):
+return 0
+d=d+1
+return 1
+for i in range(2,1000):
+ if(checkprime(i) and checkprime(i+2)):
+  print("(",i,",",i+2,")",end=" ")
+******************************************************************************************************************************************
+
+
+
+
+
+
